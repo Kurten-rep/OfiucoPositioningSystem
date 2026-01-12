@@ -1,4 +1,8 @@
-# Telescopio: Orbital Positioning System
+# Telescopio: Smillero de Astronomia Universidad El Bosque.
+
+Este es un proyecto del semillero de Astronomia de la Universidad El Bosque, Colombia.
+Es un sistema autonomo de posicionamiento en tiempo real de cuerpos celestes, que funciona en conjunto a nuestro telescopio con montura Altazimuthal para el avistamiento de cuerpos celestes del espacio cercano.
+
 
 ![Sci-Fi UI](https://your-image-url-here.png)
 _(Replace with actual screenshot)_
@@ -12,8 +16,8 @@ A positioning system connected to NASA api for real time celestial body tracking
 ## Key Features
 
 - **🚀 Real-Time Telemetry**: Calculates exact aiming coordinates (Azimuth/Altitude) for planets, moons, and asteroids.
-- **📡 Hardware Integration**: Automatically sends coordinate data to connected hardware (Telescope Mounts, Displays) via Serial/USB.
-- **🌌 Cosmic Catalog**: A searchable database of over 150+ celestial objects.
+- **📡 Hardware Integration**: Automatically sends coordinate data to connected hardware (Arduino or ESP32) via Serial/USB.
+- **🌌 Cosmic Catalog**: A searchable database of over 100+ celestial objects.
 - **🛰️ Auto-Tracking**: "Lock on" to a target to receive continuous position updates every 5 seconds.
 - **⚡ Raspberry Pi Ready**: Lightweight architecture designed for embedded deployment calculation.
 
