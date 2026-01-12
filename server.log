@@ -1,0 +1,6 @@
+INFO:     Started server process [60603]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.
+INFO:     Uvicorn running on http://0.0.0.0:8000 (Press CTRL+C to quit)
+INFO:main:Querying Horizons for 499 at -74.006,40.7128,0.0 Time: '2026-01-11 04:24'
+INFO:     127.0.0.1:58456 - "GET /api/lookup?target=499&lat=40.7128&lon=-74.0060 HTTP/1.1" 200 OK

@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Rajdhani:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap');
+
+:root {
+  --space-black: #050505;
+  --starlight: #f8fafc;
+  --glass-bg: rgba(10, 15, 30, 0.25);
+  --glass-border: rgba(255, 255, 255, 0.1);
+  
+  --font-primary: "Rajdhani", sans-serif;
+  --font-display: "Orbitron", sans-serif;
+  --font-btn: "Playfair Display", serif;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  background: radial-gradient(circle at 50% 10%, #1a1e2e 0%, var(--space-black) 80%);
+  color: var(--starlight);
+  font-family: var(--font-primary);
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+}
+
+/* ... existing code ... */
+
+/* --- COMPONENTS --- */
+.premium-input {
+  /* ... existing code ... */
+  background: rgba(0, 0, 0, 0.3);
+  border: 1px solid var(--glass-border);
+  color: white;
+  padding: 1rem 1.2rem;
+  border-radius: 8px; /* Slightly tighter radius */
+  width: 100%;
+  font-size: 0.95rem;
+  transition: all 0.3s ease;
+  letter-spacing: 0.05em;
+}
+
+.premium-input:focus {
+  outline: none;
+  background: rgba(0, 0, 0, 0.5);
+  border-color: #fff;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+}
+
+.premium-btn {
+  background: #ffffff;
+  color: #000000;
+  border: 1px solid #ffffff;
+  padding: 0.8rem 2rem;
+  border-radius: 6px; /* Matches reference rect shape */
+  font-family: var(--font-btn);
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-transform: none !important; /* Title Case as in image */
+  letter-spacing: normal;
+  font-size: 1rem;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+}
+
+.premium-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+  background: #f0f0f0;
+}
+
+.premium-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+/* Pill Variant (for Catalog/Location) */
+.btn-pill {
+    border-radius: 9999px;
+    padding: 0.5rem 1.5rem;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    color: white;
+    font-size: 0.85rem;
+}
+.btn-pill:hover {
+    background: white;
+    color: black;
+    border-color: white;
+}
+
+/* Square/Icon Variant */
+.btn-icon-square {
+    width: 2.5rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    background: transparent;
+    color: white;
+    transition: all 0.2s;
+}
+.btn-icon-square:hover {
+    border-color: white;
+    background: white;
+    color: black;
+}
+
+.premium-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(100%);
+}
